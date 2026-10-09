@@ -1,0 +1,7 @@
+timestamp,packet_id,temperature,pressure,altitude,speed,error_reason
+2026-10-09 10:00:01,PKT002,,1004.8,125.0,46.0,Invalid or missing temperature; 
+2026-10-09 10:00:02,PKT003,29.1,1200.0,130.0,48.0,pressure outside demo limits; 
+,PKT004,29.4,1003.5,135.0,49.0,Invalid timestamp; 
+2026-10-09 10:00:04,PKT002,29.7,1002.9,140.0,50.0,Duplicate packet ID; 
+2026-10-09 10:00:05,PKT006,30.0,1002.5,145.0,,Invalid or missing speed; 
+2026-10-09 09:00:00,PKT007,29.8,1001.8,150.0,47.0,Stale or out-of-order timestamp; 

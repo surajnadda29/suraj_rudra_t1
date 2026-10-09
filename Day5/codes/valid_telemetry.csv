@@ -1,0 +1,2 @@
+timestamp,packet_id,temperature,pressure,altitude,speed,error_reason
+2026-10-09 10:00:00,PKT001,28.5,1005.2,120.0,45.0,
