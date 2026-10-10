@@ -1,0 +1,50 @@
+
+{
+  "schema_name": "RUDRAEDGE_TELEMETRY",
+  "schema_version": "1.0",
+  "description": "Standard structure for telemetry sensor records",
+  "fields": {
+    "timestamp": {
+      "type": "string",
+      "format": "ISO-8601",
+      "required": true,
+      "description": "Date and time when the telemetry record was generated"
+    },
+    "sensor_id": {
+      "type": "string",
+      "required": true,
+      "description": "Unique identifier of the sensor"
+    },
+    "temperature": {
+      "type": "number",
+      "unit": "degC",
+      "required": true
+    },
+    "pressure": {
+      "type": "number",
+      "unit": "hPa",
+      "required": true
+    },
+    "altitude": {
+      "type": "number",
+      "unit": "m",
+      "required": true
+    },
+    "speed": {
+      "type": "number",
+      "unit": "m/s",
+      "required": true
+    },
+    "status_mask": {
+      "type": "integer",
+      "required": true,
+      "description": "Bit flags describing the telemetry record status",
+      "bit_definitions": {
+        "bit_0": "Record structure valid",
+        "bit_1": "Sensor data available",
+        "bit_2": "Sensor reading within configured limits",
+        "bit_3": "Timestamp valid"
+      }
+    }
+  }
+}

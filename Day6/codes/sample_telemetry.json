@@ -1,0 +1,10 @@
+
+{
+  "timestamp": "2026-10-10T10:30:00Z",
+  "sensor_id": "SENSOR_001",
+  "temperature": 24.6,
+  "pressure": 1013.2,
+  "altitude": 1500.0,
+  "speed": 12.5,
+  "status_mask": 15
+}
