@@ -1,0 +1,21 @@
+{
+  "pipeline_version": "v1",
+  "execution_status": "SUCCESS",
+  "source_records": 250,
+  "accepted_records": 242,
+  "rejected_records": 8,
+  "runtime_seconds": 1.276,
+  "flight_phase_counts": {
+    "cruise": 100,
+    "ascent": 72,
+    "descent": 70
+  },
+  "outputs": [
+    "synthetic_sensor_dataset.csv",
+    "processed_telemetry.csv",
+    "rejected_telemetry.csv",
+    "pipeline_summary.json",
+    "etl_pipeline.log"
+  ],
+  "note": "Synthetic demonstration data, not real flight data."
+}

@@ -1,0 +1,9 @@
+record_id,timestamp,sensor_id,flight_phase,temperature_c,pressure_hpa,altitude_m,speed_mps,battery_v,rejection_reason
+6,2026-10-12 09:00:25+00:00,SENSOR-02,ascent,,1008.47,140.5,16.94,12.35,missing_or_non_numeric_temperature_c
+13,,SENSOR-01,ascent,19.34,1006.13,193.15,15.36,12.43,invalid_timestamp
+21,2026-10-12 09:01:40+00:00,SENSOR-01,ascent,19.53,1003.97,258.97,-7.5,12.37,negative_speed
+31,2026-10-12 09:02:30+00:00,SENSOR-03,unknown,19.5,1000.98,337.77,16.55,12.39,invalid_flight_phase
+41,2026-10-12 09:03:20+00:00,,ascent,20.21,997.82,420.7,15.41,12.33,missing_sensor_id
+51,2026-10-12 09:04:10+00:00,SENSOR-03,ascent,17.96,996.32,inf,16.58,12.48,non_finite_altitude_m
+60,2026-10-12 09:04:55+00:00,SENSOR-04,ascent,17.56,992.57,572.12,18.21,12.38,duplicate_record_id
+60,2026-10-12 09:05:00+00:00,SENSOR-01,ascent,19.41,991.87,581.34,14.63,12.35,duplicate_record_id
