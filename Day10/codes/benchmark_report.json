@@ -1,0 +1,16 @@
+{
+    "task": "Performance Benchmarking",
+    "created_at_utc": "2026-10-13T22:49:31.413270+05:30",
+    "dataset_elements": 200000,
+    "operation": "result = value * 2 + 5",
+    "loop": {
+        "average_time_seconds": 0.102279,
+        "throughput_elements_per_second": 1955442.0
+    },
+    "vectorized": {
+        "average_time_seconds": 0.001691,
+        "throughput_elements_per_second": 118298862.38
+    },
+    "speedup_factor": 60.48,
+    "results_match": true
+}
