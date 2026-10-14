@@ -1,0 +1,53 @@
+{
+    "task": "Telemetry Fault Recovery",
+    "input_rows": 1000,
+    "sensor_results": {
+        "temperature": {
+            "missing_before": 1,
+            "invalid_readings_detected": 1,
+            "missing_after_recovery": 0,
+            "recovered_readings": 2,
+            "valid_range": [
+                -50,
+                120
+            ]
+        },
+        "pressure": {
+            "missing_before": 0,
+            "invalid_readings_detected": 0,
+            "missing_after_recovery": 0,
+            "recovered_readings": 0,
+            "valid_range": [
+                100,
+                1200
+            ]
+        },
+        "altitude": {
+            "missing_before": 1,
+            "invalid_readings_detected": 0,
+            "missing_after_recovery": 0,
+            "recovered_readings": 1,
+            "valid_range": [
+                -500,
+                10000
+            ]
+        },
+        "speed": {
+            "missing_before": 0,
+            "invalid_readings_detected": 1,
+            "missing_after_recovery": 0,
+            "recovered_readings": 1,
+            "valid_range": [
+                0,
+                200
+            ]
+        }
+    },
+    "method": "Range validation and linear interpolation",
+    "limitations": [
+        "Sensor limits are illustrative, not certified UAV limits.",
+        "Interpolated values are estimates, not confirmed measurements.",
+        "Gaps at the beginning or end may remain missing.",
+        "This demonstration may use synthetic telemetry."
+    ]
+}
